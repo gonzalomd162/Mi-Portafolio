@@ -5,19 +5,29 @@ import { RouterLink } from "vue-router";
 
 
 <template>
-    <div class="flex justify-end gap-25 pr-20 ">
+    <div class="flex justify-center gap-5 pr-10 pt-6 pb-6 bg-slate-800  z-50  ">
+        <nav  class="flex items-center gap-6 h-10 px-6 py-2 rounded-full bg-white/25 backdrop-blur-md ">
+             <RouterLink to="/home"
+            class= " flex px-4 items-center rounded-full hover:bg-white/30 transition">
+                Home
+            </RouterLink>
             <RouterLink to="/proyecto" 
-             class="rounded-md bg-slate-800 px-4 py-2 text-white hover:bg-slate-700 transition">
+            class= " flex px-4 items-center rounded-full hover:bg-white/30 transition">
+             
              Proyecto
             </RouterLink>
             <RouterLink to="/about"
-            class="rounded-md bg-slate-800 px-4 py-2 text-white hover:bg-slate-700 transition">
+            class= " flex px-4 items-center rounded-full hover:bg-white/30 transition">
+            
                 About
             </RouterLink>
             <RouterLink to="/contact"
-            class="rounded-md bg-slate-800 px-4 py-2 text-white hover:bg-slate-700 transition">
+            class= " flex px-4 items-center rounded-full hover:bg-white/30 transition">
+           
                 Contact
             </RouterLink>
+        </nav>
+             
 
     </div>
 </template>

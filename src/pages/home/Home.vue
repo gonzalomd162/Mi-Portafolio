@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import MainLayout from '@/layout/MainLayout.vue';
-import Principal from '@/pages/paginas/Principal.vue';
+
+
 
 
 
@@ -9,9 +9,22 @@ import Principal from '@/pages/paginas/Principal.vue';
 
 <template>
 
-<h1>Diseño web y apps interactivas</h1>
-<MainLayout/>
-<Principal/>
+<div class="bg-slate-800">
+    <img 
+            src="/RenderFinalPelotiña-mas-pequeña.jpg"
+            alt="Imagen principal"
+            class="pt-3.5 w-screen  object-cover "
+  />
+       
+        <img
+            src="/Arma render 1.jpg"
+            alt="Imagen principal"
+            class="pt-3.5 w-screen  object-cover"
+  />
+    <div ></div>
+    </div>
+
+        
 
 </template>
 
