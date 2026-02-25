@@ -1,5 +1,7 @@
 <script lang="ts" setup>
-import Principal from '@/paginas/Principal.vue';
+import MainLayout from '@/layout/MainLayout.vue';
+import Principal from '@/pages/paginas/Principal.vue';
+
 
 
 
@@ -8,6 +10,7 @@ import Principal from '@/paginas/Principal.vue';
 <template>
 
 <h1>Diseño web y apps interactivas</h1>
+<MainLayout/>
 <Principal/>
 
 </template>
