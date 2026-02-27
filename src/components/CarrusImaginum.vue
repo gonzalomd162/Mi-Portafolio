@@ -25,7 +25,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 <template>
   <Carousel 
-    class="w-full"
+    class=""
     :opts="{
       loop:props.loop,
       dragFree: props.dragFree
@@ -41,7 +41,7 @@ const props = withDefaults(defineProps<Props>(), {
         <img 
           :src="`${ props.basePath }/${ photo }.jpg`" 
           :alt="`image ${ index + 1}`"
-          class="w-full h-auto object-cover"
+          class=""
         >
       </CarouselItem>
     </CarouselContent>
