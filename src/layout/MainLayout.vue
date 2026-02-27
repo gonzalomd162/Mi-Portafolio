@@ -6,7 +6,7 @@ import { RouterLink } from "vue-router";
 
 <template>
     <div  >
-        
+    
     </div>
 </template>
 
