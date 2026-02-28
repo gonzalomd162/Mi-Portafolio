@@ -118,3 +118,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/static/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

@@ -130,12 +130,40 @@ const handleMenuClick = (sectionId: string) => {
 
   <div class="bg-[#04090ffe]">
 
+     
+    <div class="flex relative"> 
 
-     <CarrusImaginum class="" 
-     :photos="photos"
-     basePath="/imagenesLetras"
-     :auto-play-delay="6000"
-    />
+      <CarrusImaginum 
+      class=" z-0" 
+      :photos="photos"
+      basePath="/imagenesLetras"
+      :auto-play-delay="6000"
+      />
+      <img
+          src="/3D.png"
+          alt="Decoracion carrusel"
+          class=" z-10 w-25 ml-13 mt-24 absolute md:w-40 md:ml-19 md:mt-28 lg:w-50 lg:ml-28 lg:mt-40"
+      />
+      
+      <h2 class="hidden z-10 md:inlinemd:text-left md:font-titulo md:w-40 md:absolute md:m-14 md:mt-40 md:text-destructive  md:mt-55 md:m-20 lg:mt-76 lg:m-31 ">
+        Visuales 3D enfocados en publicidad y dirección visual.
+      </h2>
+
+      <button class=""
+      >
+        <RouterLink
+          to="/proyectos-3d"
+          class="absolute z-20 right-10 bottom-10 md:right-10 md:bottom-10 lg:right-16 lg:bottom-60 flex px-3 py-1 items-center rounded-full bg-white/25 transition  hover:text-red-500 border-white/40"
+          >
+          Proyectos 3D
+        </RouterLink>
+      </button>
+
+
+    </div>
+    
+      
+    
 
 
 
@@ -145,14 +173,46 @@ const handleMenuClick = (sectionId: string) => {
 
 <section id="conecta">
 
-  <div class="bg-[#04090ffe]  ">
+  <div 
+  class="relative bg-[#04090ffe]"
+  style="background-image: url('/fondo2.jpg')"
+  >
 
     <!-- <img
             src="/fondo2.jpg"
             alt="Imagen principal"
-            class="pt-3.5 w-screen  object-cover "
+            class="block w-full h-auto object-cover "
     /> -->
+    <div class="flex justify-center">
+      <img 
+      src="/conecta_img/CONECTA_.png" 
+      alt=""
+      class="object-cover  w-200 pb-30"
+      >
+    </div>
 
+    <div class="flex justify-around ">
+      <img
+            src="/conecta_img/foto video.jpg"
+            alt=""
+            class="m-10 z-20 w-90 h-60 flex-end  object-cover rounded-2xl "
+      />
+      <img
+            src="/conecta_img/Mockup carteles.jpg"
+            alt=""
+            class="m-10 z-20 w-90 h-60 object-cover rounded-2xl  "
+      />
+      <img
+            src="/conecta_img/Mockup_triptico.jpg"
+            alt=""
+            class="m-10 z-20 w-90 h-60 object-cover rounded-2xl  "
+      />
+
+    </div >
+       
+    <div class="flex justify-center">
+      
+    </div>
   </div>
 
 </section>
@@ -186,5 +246,7 @@ const handleMenuClick = (sectionId: string) => {
 </template>
 
 <style scoped>
-
+.titulo > h2 {
+  font-family: Montserrat;
+}
 </style>

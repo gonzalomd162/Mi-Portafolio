@@ -1,6 +1,7 @@
 
 import Home from "@/pages/home/Home.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
+import Proyectos3D from "@/pages/paginas/Proyectos3D.vue";
 
 
 
@@ -13,6 +14,10 @@ export const router = createRouter({
     name: 'home',
     component: Home
   },
- 
+  { path: "/proyectos-3d",
+    name: "proyectos-3d",
+    component: Proyectos3D 
+    },
 ]
+
 })
