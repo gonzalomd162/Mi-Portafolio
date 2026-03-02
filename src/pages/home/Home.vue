@@ -132,16 +132,16 @@ const handleMenuClick = (sectionId: string) => {
 
      
     <div class="flex relative"> 
-
+      
       <CarrusImaginum 
-      class=" z-0" 
+      class=" z-0 h-185 w-max md:h-max " 
       :photos="photos"
       basePath="/imagenesLetras"
       :auto-play-delay="6000"
       />
       <img
           src="/3D.png"
-          alt="Decoracion carrusel"
+          alt=""
           class=" z-10 w-25 ml-13 mt-24 absolute md:w-40 md:ml-19 md:mt-28 lg:w-50 lg:ml-28 lg:mt-40"
       />
       
@@ -153,7 +153,7 @@ const handleMenuClick = (sectionId: string) => {
       >
         <RouterLink
           to="/proyectos-3d"
-          class="absolute z-20 right-10 bottom-10 md:right-10 md:bottom-10 lg:right-16 lg:bottom-60 flex px-3 py-1 items-center rounded-full bg-white/25 transition  hover:text-red-500 border-white/40"
+          class="absolute z-20 right-10 bottom-25 md:right-10 md:bottom-10 lg:right-16 lg:bottom-60 flex px-8 py-3 items-center rounded-full bg-white/25 transition  hover:text-red-500 border-white/40"
           >
           Proyectos 3D
         </RouterLink>
@@ -174,7 +174,7 @@ const handleMenuClick = (sectionId: string) => {
 <section id="conecta">
 
   <div 
-  class="relative bg-[#04090ffe]"
+  class="relative w-full bg-[#04090ffe] bg-top bg-no-repeat bg-[length:100%_auto] min-h-[1500px] "
   style="background-image: url('/fondo2.jpg')"
   >
 
@@ -183,30 +183,46 @@ const handleMenuClick = (sectionId: string) => {
             alt="Imagen principal"
             class="block w-full h-auto object-cover "
     /> -->
-    <div class="flex justify-center">
-      <img 
-      src="/conecta_img/CONECTA_.png" 
-      alt=""
-      class="object-cover  w-200 pb-30"
-      >
+    <div class=" ">
+      <div class="flex justify-center">
+        <img 
+        src="/conecta_img/CONECTA_.png" 
+        alt=""
+        class="object-cover  w-200 pb-0"
+        >
+        
+      </div>
+      <p class="text-white m-9 md:m30 lg:m-40">
+          Esta campaña de conexión intergeneracional muestra que emociones como el amor, la amistad y el humor se entienden igual a cualquier edad. Lejos de comparar el pasado con el presente, el proyecto pone el foco en cómo personas jóvenes y mayores viven hoy esos mismos sentimientos.
+        </p>
     </div>
 
-    <div class="flex justify-around ">
+    <div class="flex flex-col justify-center md:flex-row ">
       <img
             src="/conecta_img/foto video.jpg"
             alt=""
-            class="m-10 z-20 w-90 h-60 flex-end  object-cover rounded-2xl "
+            class="m-5 z-20 lg:w-90 lg:h-80 md:w-60 md:h-60 flex-end  object-cover rounded-2xl "
       />
       <img
             src="/conecta_img/Mockup carteles.jpg"
             alt=""
-            class="m-10 z-20 w-90 h-60 object-cover rounded-2xl  "
+            class="m-5 z-20 lg:w-90 lg:h-80 md:w-60 md:h-60 object-cover rounded-2xl  "
       />
       <img
             src="/conecta_img/Mockup_triptico.jpg"
             alt=""
-            class="m-10 z-20 w-90 h-60 object-cover rounded-2xl  "
+            class="m-5 z-20 lg:w-90 lg:h-80 md:w-60 md:h-60 md:flex-col object-cover rounded-2xl  "
       />
+
+      <button class=""
+      >
+        <RouterLink
+          to="/MasCampanas"
+          class="absolute z-20 right-10  md:right-10 md:bottom-10 lg:right-16 lg:bottom-60 flex px-5 py-3 items-center rounded-full bg-white/25 transition  hover:text-red-500 border-white/40"
+        >
+          Mas proyectos
+        </RouterLink>
+      </button>
 
     </div >
        
@@ -219,6 +235,11 @@ const handleMenuClick = (sectionId: string) => {
 
 <section id="carteles">
   <div class="bg-[#04090ffe]  ">
+    <div 
+  class="relative w-full bg-[#04090ffe] bg-top bg-no-repeat bg-[length:100%_auto] min-h-[1500px] "
+  style="background-image: url('/fondo2.jpg')"
+  >
+  </div>
 
    <!--  <img
             src="/fondo2.jpg"

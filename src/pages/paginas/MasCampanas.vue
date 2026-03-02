@@ -4,7 +4,9 @@
 
 <template>
     <div>
-        <p>pagina de proyectos</p>
+        <p>
+            pagina de Campañas
+        </p>
     </div>
 </template>
 
