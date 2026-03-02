@@ -198,30 +198,55 @@ const handleMenuClick = (sectionId: string) => {
     </div>
 
     <div class="flex flex-col justify-center md:flex-row ">
-      <img
-            src="/conecta_img/foto video.jpg"
-            alt=""
-            class="m-5 z-20 lg:w-90 lg:h-80 md:w-60 md:h-60 flex-end  object-cover rounded-2xl "
-      />
-      <img
-            src="/conecta_img/Mockup carteles.jpg"
-            alt=""
-            class="m-5 z-20 lg:w-90 lg:h-80 md:w-60 md:h-60 object-cover rounded-2xl  "
-      />
-      <img
-            src="/conecta_img/Mockup_triptico.jpg"
-            alt=""
-            class="m-5 z-20 lg:w-90 lg:h-80 md:w-60 md:h-60 md:flex-col object-cover rounded-2xl  "
-      />
+      <button>
+        <RouterLink
+          to="/conecta/Video"
+          class=""
+        >
+          <img
+                src="/conecta_img/foto video.jpg"
+                alt=""
+                class="m-5 z-20 lg:w-90 lg:h-80 md:w-60 md:h-60 flex-end  object-cover rounded-2xl "
+          />
+        </RouterLink>
+      </button>
+      <button>
+      
+        <RouterLink
+          to="/conecta/CartelesConecta"
+          class=""
+        >
 
-      <button class=""
-      >
+          <img
+                src="/conecta_img/Mockup carteles.jpg"
+                alt=""
+                class="m-5 z-20 lg:w-90 lg:h-80 md:w-60 md:h-60 object-cover rounded-2xl  "
+          />
+        </RouterLink>
+      
+      </button>
+      <button>
+        <RouterLink
+          to="/conecta/Triptico"
+          class=""
+        >
+          <img
+                src="/conecta_img/Mockup_triptico.jpg"
+                alt=""
+                class="m-5 z-20 lg:w-90 lg:h-80 md:w-60 md:h-60 md:flex-col object-cover rounded-2xl  "
+          />
+        </RouterLink>
+      
+      </button>
+      <button>
+      
         <RouterLink
           to="/MasCampanas"
           class="absolute z-20 right-10  md:right-10 md:bottom-10 lg:right-16 lg:bottom-60 flex px-5 py-3 items-center rounded-full bg-white/25 transition  hover:text-red-500 border-white/40"
         >
           Mas proyectos
         </RouterLink>
+        
       </button>
 
     </div >

@@ -36,7 +36,8 @@ const props = withDefaults(defineProps<Props>(), {
       stopOnInteraction: false,
     })]"
     >
-    <CarouselContent>
+    <CarouselContent> <!-- aqui 6
+      7/4 ejemplo-->
       <CarouselItem v-for="(photo, index) in props.photos" :key="index">
         <img 
           :src="`${ props.basePath }/${ photo }.jpg`" 
