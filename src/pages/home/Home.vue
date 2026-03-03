@@ -145,7 +145,7 @@ const handleMenuClick = (sectionId: string) => {
           class=" z-10 w-25 ml-13 mt-24 absolute md:w-40 md:ml-19 md:mt-28 lg:w-50 lg:ml-28 lg:mt-40"
       />
       
-      <h2 class="hidden z-10 md:inlinemd:text-left md:font-titulo md:w-40 md:absolute md:m-14 md:mt-40 md:text-destructive  md:mt-55 md:m-20 lg:mt-76 lg:m-31 ">
+      <h2 class="z-10 md:inlinemd:text-left md:font-titulo md:w-40 md:absolute md:m-14 md:mt-40 md:text-white   md:mt-55 md:m-20 lg:mt-76 lg:m-31 ">
         Visuales 3D enfocados en publicidad y dirección visual.
       </h2>
 
@@ -153,7 +153,7 @@ const handleMenuClick = (sectionId: string) => {
       >
         <RouterLink
           to="/proyectos-3d"
-          class="absolute z-20 right-10 bottom-25 md:right-10 md:bottom-10 lg:right-16 lg:bottom-60 flex px-8 py-3 items-center rounded-full bg-white/25 transition  hover:text-red-500 border-white/40"
+          class="absolute z-20 right-10 bottom-25 md:right-10 md:bottom-10 lg:right-16 lg:bottom-60 flex px-8 py-3 items-center rounded-full bg-white/25 transition  hover:text-white border-white/40"
           >
           Proyectos 3D
         </RouterLink>
@@ -242,7 +242,7 @@ const handleMenuClick = (sectionId: string) => {
       
         <RouterLink
           to="/MasCampanas"
-          class="absolute z-20 right-10  md:right-10 md:bottom-10 lg:right-16 lg:bottom-60 flex px-5 py-3 items-center rounded-full bg-white/25 transition  hover:text-red-500 border-white/40"
+          class="absolute z-20 right-10  md:right-10 md:bottom-10 lg:right-16 lg:bottom-60 flex px-5 py-3 items-center rounded-full bg-white/25 transition  hover:text-white border-white/40"
         >
           Mas proyectos
         </RouterLink>
