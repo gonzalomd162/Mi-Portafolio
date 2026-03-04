@@ -4,7 +4,7 @@
 
 <template>
     <div>
-        <p>conecta cartel</p>
+        <p>Mupi cartel</p>
     </div>
 </template>
 

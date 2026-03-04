@@ -86,22 +86,29 @@ const conectaProjects = [
 ]
 const carteles = [
   {
-    title: 'Cartel1',
+    title: 'Conecta',
     subtitle: 'Carteles conceptuales para campanas de marca',
     image: '/Carteles/Mockup carteles CONECTA.jpg',
-    to: ''
+    to: '/carteles/Conecta'
   },
   {
-    title: 'cartel2',
-    subtitle: 'Carteles conceptuales para campanas de marca',
-    image: '/Free_Poster_Frame_Mockup_2.jpg',
-    to: ''
-  },
-  {
-    title: 'cartel3',
+    title: 'Mupi Conecta',
     subtitle: 'Carteles conceptuales para campanas de marca',
     image: '/conecta_img/Mockup  mupi.jpg',
-    to: ''
+    to: '/carteles/Mupi'
+  },
+  {
+    title: 'Lujuria',
+    subtitle: 'Carteles conceptuales para campanas de marca',
+    image: '/Free_Poster_Frame_Mockup_2.jpg',
+    to: '/carteles/Lujuria'
+  },
+  
+   {
+    title: 'CREFAD',
+    subtitle: 'Carteles conceptuales para campanas de marca',
+    image: '/Carteles/Mockup CREFAD.jpg',
+    to: '/carteles/Crefad'
   },
 ]
 const menuOpen = ref(false)
