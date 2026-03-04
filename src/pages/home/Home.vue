@@ -84,21 +84,24 @@ const conectaProjects = [
     to: '/conecta/Triptico',
   },
 ]
-const posters = [
+const carteles = [
   {
-    title: ' ',
+    title: 'Cartel1',
     subtitle: 'Carteles conceptuales para campanas de marca',
-    image: '/conecta_img/Mockup carteles.jpg',
+    image: '/Carteles/Mockup carteles CONECTA.jpg',
+    to: ''
   },
   {
-    title: 'Poster',
-    subtitle: 'Direccion de arte con composicion editorial',
+    title: 'cartel2',
+    subtitle: 'Carteles conceptuales para campanas de marca',
     image: '/Free_Poster_Frame_Mockup_2.jpg',
+    to: ''
   },
   {
-    title: 'Mupi Conecta',
-    subtitle: 'Adaptacion para entorno exterior y gran formato',
+    title: 'cartel3',
+    subtitle: 'Carteles conceptuales para campanas de marca',
     image: '/conecta_img/Mockup  mupi.jpg',
+    to: ''
   },
 ]
 const menuOpen = ref(false)
@@ -359,60 +362,62 @@ const handleMenuClick = (sectionId: string) => {
   </div>
 
 </section>
+
 <section id="carteles">
+
   <div class="bg-[#04090ffe] px-5 pb-16 pt-6 md:px-10 lg:px-16">
-    <div class="mx-auto w-full max-w-6xl rounded-[28px] border border-[#8ca7c124] bg-gradient-to-b from-[#7491af] via-[#47617f] to-[#1f3550] p-5 shadow-[0_30px_80px_rgba(4,9,15,0.45)] md:p-8">
-      <div class="mb-8 grid gap-6 lg:grid-cols-12">
-        <div class="space-y-4 lg:col-span-8">
+    <div
+      class="mx-auto w-full max-w-6xl rounded-[28px] border border-[#8ca7c124] bg-gradient-to-b from-[#0d1d30fe] via-[#45607e] to-[#1c324d] p-5 shadow-[0_30px_80px_rgba(4,9,15,0.45)] md:p-8"
+    >
+      <div class="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+        <div class="max-w-3xl space-y-4">
           <p class="text-xs tracking-[0.22em] text-[#d9e8f7] uppercase font-['Montserrat-Light']">
-            Home / Carteles section
+            Home / CARTELES
           </p>
-          <h2 class="text-3xl leading-[1.05] text-white md:text-5xl font-['ClashDisplay']">
-            Carteles
-          </h2>
-          <p class="max-w-2xl text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
-            En este apartado muestro carteles que diseno para campanas y piezas promocionales.
-            Trabajo composicion, tipografia e impacto visual para comunicar mensajes claros en digital y en gran formato.
+          <img
+            src="/CARTELES.png"
+            alt="Conecta"
+            class="w-full max-w-[430px] object-contain"
+          >
+          <p class="text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
+            selección de carteles donde exploro la comunicación visual desde la síntesis,
+            la jerarquía y la intención gráfica.
+            Cada pieza responde a un concepto claro: atraer, informar y permanecer en la memoria.
           </p>
         </div>
 
-        <div class="flex items-end justify-start lg:col-span-4 lg:justify-end">
-          <RouterLink
-            to="/conecta/CartelesConecta"
-            class="inline-flex w-fit items-center justify-center rounded-full border border-[#cde4f880] bg-white/10 px-6 py-3 text-sm text-white transition hover:bg-white/20 font-['Montserrat-SemiBold']"
-          >
-            Ver carteles
-          </RouterLink>
-        </div>
+        
       </div>
 
-      <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-        <article
-          v-for="poster in posters"
-          :key="poster.title"
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 ">
+        <RouterLink
+          v-for="cartel in carteles"
+          :key="cartel.title"
+          :to="cartel.to"
           class="group overflow-hidden rounded-2xl border border-white/20 bg-[#10263d]/70 transition hover:-translate-y-1 hover:bg-[#15324f]/80"
         >
-          <div class="h-72 overflow-hidden md:h-80">
+          <div class="h-56 overflow-hidden md:h-60 ">
             <img
-              :src="poster.image"
-              :alt="poster.title"
-              class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              :src="cartel.image"
+              :alt="cartel.title"
+              class="h-full w-full object-cover transition duration-500 group-hover:scale-105 "
             >
           </div>
           <div class="space-y-2 p-5">
-            <h3 class="text-lg text-white font-['Montserrat-SemiBold']">
-              {{ poster.title }}
+            <h3 class="text-lg font-bold text-white font-['Montserrat-SemiBold']">
+              {{ cartel.title }}
             </h3>
             <p class="text-sm leading-relaxed text-[#d7e5f4] font-['Montserrat']">
-              {{ poster.subtitle }}
+              {{ cartel.subtitle }}
             </p>
           </div>
-        </article>
+        </RouterLink>
       </div>
     </div>
   </div>
 
 </section>
+
 
 <section id="contacto">
   <div class="bg-[#04090ffe]  ">
