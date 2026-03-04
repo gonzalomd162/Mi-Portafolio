@@ -86,17 +86,17 @@ const conectaProjects = [
 ]
 const posters = [
   {
-    title: 'Serie principal',
+    title: ' ',
     subtitle: 'Carteles conceptuales para campanas de marca',
     image: '/conecta_img/Mockup carteles.jpg',
   },
   {
-    title: 'Poster frame',
+    title: 'Poster',
     subtitle: 'Direccion de arte con composicion editorial',
     image: '/Free_Poster_Frame_Mockup_2.jpg',
   },
   {
-    title: 'Mupi urbano',
+    title: 'Mupi Conecta',
     subtitle: 'Adaptacion para entorno exterior y gran formato',
     image: '/conecta_img/Mockup  mupi.jpg',
   },
@@ -309,7 +309,7 @@ const handleMenuClick = (sectionId: string) => {
       <div class="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
         <div class="max-w-3xl space-y-4">
           <p class="text-xs tracking-[0.22em] text-[#d9e8f7] uppercase font-['Montserrat-Light']">
-            Home / Conecta section
+            Home / Conecta
           </p>
           <img
             src="/conecta_img/CONECTA_.png"
@@ -317,9 +317,9 @@ const handleMenuClick = (sectionId: string) => {
             class="w-full max-w-[430px] object-contain"
           >
           <p class="text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
-            Campana de conexion intergeneracional centrada en emociones compartidas.
+            Campaña de conexion intergeneracional centrada en emociones compartidas.
             La idea no compara epocas: muestra como jovenes y mayores viven hoy
-            el amor, la amistad y el humor desde un lenguaje visual comun.
+            el amor, la amistad y el humor.
           </p>
         </div>
 
