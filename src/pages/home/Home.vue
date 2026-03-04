@@ -30,8 +30,9 @@ const works3D = [
     subtitle: 'Iluminacion y composicion de producto',
     image: '/Imagenes_Arma/Arma render 7.2.jpg',
   },
+  
   {
-    title: 'Detail Pass',
+    title: 'WireFrame',
     subtitle: 'Composición de la escena',
     image: '/Imagenes_Arma/Captura de blender 2.jpg',
   },
@@ -40,13 +41,65 @@ const works3D = [
     subtitle: 'Esquema nodal',
     image: '/Imagenes_Bola/RenderFinalPelotiña.jpg',
   },
-  {
-    title: 'Procedural Ball',
+   {
+    title: 'WireFrame',
     subtitle: 'Pieza 3D procedural en Houdini SideFX',
     image: '/Imagenes_Bola/Captura Bola.jpg',
   },
+  {
+    title: 'Letra G',
+    subtitle: 'Pieza 3D letra G',
+    image: '/imagenesLetras/letra_G.jpg',
+  },
+ {
+    title: 'Letra M',
+    subtitle: 'Pieza 3D letra M',
+    image: '/imagenesLetras/letra_M.jpg',
+  },
+  {
+    title: 'Letra D',
+    subtitle: 'Pieza 3D letra D',
+    image: '/imagenesLetras/letra_D.jpg',
+  },
  
   
+]
+const conectaProjects = [
+  {
+    title: 'Video de campana',
+    subtitle: 'Spot principal con narrativa intergeneracional',
+    image: '/conecta_img/foto video.jpg',
+    to: '/conecta/Video',
+  },
+  {
+    title: 'Serie de carteles',
+    subtitle: 'Sistema visual para exterior y soportes impresos',
+    image: '/conecta_img/Mockup carteles.jpg',
+    to: '/conecta/CartelesConecta',
+  },
+  {
+    title: 'Triptico editorial',
+    subtitle: 'Pieza informativa para la accion de marca',
+    image: '/conecta_img/Mockup_triptico.jpg',
+    to: '/conecta/Triptico',
+  },
+]
+const posters = [
+  {
+    title: 'Serie principal',
+    subtitle: 'Carteles conceptuales para campanas de marca',
+    image: '/conecta_img/Mockup carteles.jpg',
+  },
+  {
+    title: 'Poster frame',
+    subtitle: 'Direccion de arte con composicion editorial',
+    image: '/Free_Poster_Frame_Mockup_2.jpg',
+  },
+  {
+    title: 'Mupi urbano',
+    subtitle: 'Adaptacion para entorno exterior y gran formato',
+    image: '/conecta_img/Mockup  mupi.jpg',
+  },
 ]
 const menuOpen = ref(false)
 
@@ -164,25 +217,21 @@ const handleMenuClick = (sectionId: string) => {
 <section id="section-3d">
 
   <div class="bg-[#04090ffe] px-5 py-14 md:px-10 lg:px-16">
-    <div class="mx-auto w-full max-w-6xl rounded-[28px] border border-[#8ca7c124] bg-gradient-to-b from-[#7f9ab9] via-[#4c6684] to-[#243a56] p-5 shadow-[0_30px_80px_rgba(4,9,15,0.5)] md:p-8">
+    <div class="mx-auto w-full max-w-6xl rounded-[28px] border border-[#8ca7c124] bg-gradient-to-b from-[#0d1d30fe] via-[#4c6684] to-[#243a56] p-5 shadow-[0_30px_80px_rgba(4,9,15,0.5)] md:p-8">
       <div class="mb-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div class="flex max-w-2xl flex-col gap-4">
-          <p class="text-xs tracking-[0.22em] text-[#d9e8f7] uppercase">
+          <p class="font-['Montserrat-Light'] text-xs tracking-[0.22em] text-[#d9e8f7] uppercase  ">
             Home / 3D section
           </p>
-          <h2 class="font-['Montserrat'] text-3xl leading-[1.05] font-extrabold text-white md:text-5xl">
+          <h2 class="font-['ClashDisplay'] text-3xl leading-[1.05]  text-white md:text-5xl ">
             Introduccion a mis proyectos 3D
           </h2>
-          <p class="max-w-xl text-sm leading-relaxed text-[#d7e4f2] md:text-base">
+          <p class="max-w-xl text-sm leading-relaxed text-[#d7e4f2] md:text-base font-['Montserrat']">
             Visuales creados para publicidad y direccion de arte. Este carrusel muestra una seleccion de proyectos para presentar mi estilo y proceso de trabajo.
           </p>
         </div>
 
-        <div class="flex items-center gap-3">
-          <div class="h-2.5 w-2.5 rounded-full bg-[#cbe5ff]" />
-          <div class="h-2.5 w-2.5 rounded-full bg-[#95b4d5]" />
-          <div class="h-2.5 w-2.5 rounded-full bg-[#4f6f90]" />
-        </div>
+        
       </div>
 
       <div class="grid gap-6 lg:grid-cols-12">
@@ -233,7 +282,7 @@ const handleMenuClick = (sectionId: string) => {
               alt="3D"
               class="w-20 md:w-24"
             >
-            <p class="text-sm leading-relaxed text-[#d7e4f2]">
+            <p class="text-sm leading-relaxed text-[#d7e4f2] font-['Montserrat']">
               Cada pieza incluye desarrollo de concepto, modelado, materiales e iluminacion para una presentacion visual clara y profesional.
             </p>
           </div>
@@ -253,105 +302,114 @@ const handleMenuClick = (sectionId: string) => {
 
 <section id="conecta">
 
-  <div 
-  class="relative w-full bg-[#04090ffe] bg-top bg-no-repeat bg-[length:100%_auto] min-h-[1500px] "
-  style="background-image: url('/fondo2.jpg')"
-  >
-
-    <!-- <img
-            src="/fondo2.jpg"
-            alt="Imagen principal"
-            class="block w-full h-auto object-cover "
-    /> -->
-    <div class=" ">
-      <div class="flex justify-center">
-        <img 
-        src="/conecta_img/CONECTA_.png" 
-        alt=""
-        class="object-cover  w-200 pb-0"
-        >
-        
-      </div>
-      <p class="text-white m-9 md:m30 lg:m-40">
-          Esta campaña de conexión intergeneracional muestra que emociones como el amor, la amistad y el humor se entienden igual a cualquier edad. Lejos de comparar el pasado con el presente, el proyecto pone el foco en cómo personas jóvenes y mayores viven hoy esos mismos sentimientos.
-        </p>
-    </div>
-
-    <div class="flex flex-col justify-center md:flex-row ">
-      <button>
-        <RouterLink
-          to="/conecta/Video"
-          class=""
-        >
+  <div class="bg-[#04090ffe] px-5 pb-16 pt-6 md:px-10 lg:px-16">
+    <div
+      class="mx-auto w-full max-w-6xl rounded-[28px] border border-[#8ca7c124] bg-gradient-to-b from-[#0d1d30fe] via-[#45607e] to-[#1c324d] p-5 shadow-[0_30px_80px_rgba(4,9,15,0.45)] md:p-8"
+    >
+      <div class="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+        <div class="max-w-3xl space-y-4">
+          <p class="text-xs tracking-[0.22em] text-[#d9e8f7] uppercase font-['Montserrat-Light']">
+            Home / Conecta section
+          </p>
           <img
-                src="/conecta_img/foto video.jpg"
-                alt=""
-                class="m-5 z-20 lg:w-90 lg:h-80 md:w-60 md:h-60 flex-end  object-cover rounded-2xl "
-          />
-        </RouterLink>
-      </button>
-      <button>
-      
-        <RouterLink
-          to="/conecta/CartelesConecta"
-          class=""
-        >
+            src="/conecta_img/CONECTA_.png"
+            alt="Conecta"
+            class="w-full max-w-[430px] object-contain"
+          >
+          <p class="text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
+            Campana de conexion intergeneracional centrada en emociones compartidas.
+            La idea no compara epocas: muestra como jovenes y mayores viven hoy
+            el amor, la amistad y el humor desde un lenguaje visual comun.
+          </p>
+        </div>
 
-          <img
-                src="/conecta_img/Mockup carteles.jpg"
-                alt=""
-                class="m-5 z-20 lg:w-90 lg:h-80 md:w-60 md:h-60 object-cover rounded-2xl  "
-          />
-        </RouterLink>
-      
-      </button>
-      <button>
-        <RouterLink
-          to="/conecta/Triptico"
-          class=""
-        >
-          <img
-                src="/conecta_img/Mockup_triptico.jpg"
-                alt=""
-                class="m-5 z-20 lg:w-90 lg:h-80 md:w-60 md:h-60 md:flex-col object-cover rounded-2xl  "
-          />
-        </RouterLink>
-      
-      </button>
-      <button>
-      
         <RouterLink
           to="/MasCampanas"
-          class="absolute z-20 right-10  md:right-10 md:bottom-10 lg:right-16 lg:bottom-60 flex px-5 py-3 items-center rounded-full bg-white/25 transition  hover:text-white border-white/40"
+          class="inline-flex w-fit items-center justify-center rounded-full border border-[#cde4f880] bg-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/20"
         >
           Mas proyectos
         </RouterLink>
-        
-      </button>
+      </div>
 
-    </div >
-       
-    <div class="flex justify-center">
-      
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 ">
+        <RouterLink
+          v-for="project in conectaProjects"
+          :key="project.title"
+          :to="project.to"
+          class="group overflow-hidden rounded-2xl border border-white/20 bg-[#10263d]/70 transition hover:-translate-y-1 hover:bg-[#15324f]/80"
+        >
+          <div class="h-56 overflow-hidden md:h-60 ">
+            <img
+              :src="project.image"
+              :alt="project.title"
+              class="h-full w-full object-cover transition duration-500 group-hover:scale-105 "
+            >
+          </div>
+          <div class="space-y-2 p-5">
+            <h3 class="text-lg font-bold text-white font-['Montserrat-SemiBold']">
+              {{ project.title }}
+            </h3>
+            <p class="text-sm leading-relaxed text-[#d7e5f4] font-['Montserrat']">
+              {{ project.subtitle }}
+            </p>
+          </div>
+        </RouterLink>
+      </div>
     </div>
   </div>
 
 </section>
-
 <section id="carteles">
-  <div class="bg-[#04090ffe]  ">
-    <div 
-  class="relative w-full bg-[#04090ffe] bg-top bg-no-repeat bg-[length:100%_auto] min-h-[1500px] "
-  style="background-image: url('/fondo2.jpg')"
-  >
-  </div>
+  <div class="bg-[#04090ffe] px-5 pb-16 pt-6 md:px-10 lg:px-16">
+    <div class="mx-auto w-full max-w-6xl rounded-[28px] border border-[#8ca7c124] bg-gradient-to-b from-[#7491af] via-[#47617f] to-[#1f3550] p-5 shadow-[0_30px_80px_rgba(4,9,15,0.45)] md:p-8">
+      <div class="mb-8 grid gap-6 lg:grid-cols-12">
+        <div class="space-y-4 lg:col-span-8">
+          <p class="text-xs tracking-[0.22em] text-[#d9e8f7] uppercase font-['Montserrat-Light']">
+            Home / Carteles section
+          </p>
+          <h2 class="text-3xl leading-[1.05] text-white md:text-5xl font-['ClashDisplay']">
+            Carteles
+          </h2>
+          <p class="max-w-2xl text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
+            En este apartado muestro carteles que diseno para campanas y piezas promocionales.
+            Trabajo composicion, tipografia e impacto visual para comunicar mensajes claros en digital y en gran formato.
+          </p>
+        </div>
 
-   <!--  <img
-            src="/fondo2.jpg"
-            alt="Imagen principal"
-            class="pt-3.5 w-screen  object-cover "
-    /> -->
+        <div class="flex items-end justify-start lg:col-span-4 lg:justify-end">
+          <RouterLink
+            to="/conecta/CartelesConecta"
+            class="inline-flex w-fit items-center justify-center rounded-full border border-[#cde4f880] bg-white/10 px-6 py-3 text-sm text-white transition hover:bg-white/20 font-['Montserrat-SemiBold']"
+          >
+            Ver carteles
+          </RouterLink>
+        </div>
+      </div>
 
+      <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <article
+          v-for="poster in posters"
+          :key="poster.title"
+          class="group overflow-hidden rounded-2xl border border-white/20 bg-[#10263d]/70 transition hover:-translate-y-1 hover:bg-[#15324f]/80"
+        >
+          <div class="h-72 overflow-hidden md:h-80">
+            <img
+              :src="poster.image"
+              :alt="poster.title"
+              class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            >
+          </div>
+          <div class="space-y-2 p-5">
+            <h3 class="text-lg text-white font-['Montserrat-SemiBold']">
+              {{ poster.title }}
+            </h3>
+            <p class="text-sm leading-relaxed text-[#d7e5f4] font-['Montserrat']">
+              {{ poster.subtitle }}
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
   </div>
 
 </section>
@@ -370,3 +428,35 @@ const handleMenuClick = (sectionId: string) => {
 </section>
 
 </template>
+
+<style scoped>
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(/fonts/static/Montserrat/Montserrat-Regular.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(/fonts/static/Montserrat/Montserrat-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url(/fonts/static/Montserrat/Montserrat-SemiBold.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ClashDisplay";
+  src: url(/fonts/static/ClashDisplay/ClashDisplay-Semibold.ttf) format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+</style>
