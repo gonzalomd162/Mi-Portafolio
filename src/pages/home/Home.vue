@@ -87,13 +87,13 @@ const conectaProjects = [
 const carteles = [
   {
     title: 'Conecta',
-    subtitle: 'Carteles conceptuales para campanas de marca',
+    subtitle: 'Carteles de la campaña CONECTA',
     image: '/Carteles/Mockup carteles CONECTA.jpg',
     to: '/carteles/Conecta'
   },
   {
     title: 'Mupi Conecta',
-    subtitle: 'Carteles conceptuales para campanas de marca',
+    subtitle: 'Mupi de la campaña CONECTA',
     image: '/conecta_img/Mockup  mupi.jpg',
     to: '/carteles/Mupi'
   },
@@ -163,6 +163,13 @@ const handleMenuClick = (sectionId: string) => {
             </NavigationMenuLink>
           </a>
         </NavigationMenuItem>
+        <NavigationMenuItem class="flex px-4 items-center rounded-full hover:bg-white/30 transition">
+          <a href="#" @click.prevent="scrollToSection('#about')">
+            <NavigationMenuLink>
+              About
+            </NavigationMenuLink>
+          </a>
+        </NavigationMenuItem>
 
         <NavigationMenuItem class="flex px-4 items-center rounded-full hover:bg-white/30 transition">
           <a href="#" @click.prevent="scrollToSection('#contacto')">
@@ -227,15 +234,17 @@ const handleMenuClick = (sectionId: string) => {
 <section id="section-3d">
 
   <div class="bg-[#04090ffe] px-5 py-14 md:px-10 lg:px-16">
-    <div class="mx-auto w-full max-w-6xl rounded-[28px] border border-[#8ca7c124] bg-gradient-to-b from-[#0d1d30fe] via-[#4c6684] to-[#243a56] p-5 shadow-[0_30px_80px_rgba(4,9,15,0.5)] md:p-8">
+    <div class="">
       <div class="mb-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div class="flex max-w-2xl flex-col gap-4">
           <p class="font-['Montserrat-Light'] text-xs tracking-[0.22em] text-[#d9e8f7] uppercase  ">
             Home / 3D section
           </p>
-          <h2 class="font-['ClashDisplay'] text-3xl leading-[1.05]  text-white md:text-5xl ">
-            Introduccion a mis proyectos 3D
-          </h2>
+         <img
+            src="/Proyectos3D.png"
+            alt="Conecta"
+            class="w-full max-w-[430px] object-contain"
+          >
           <p class="max-w-xl text-sm leading-relaxed text-[#d7e4f2] md:text-base font-['Montserrat']">
             Visuales creados para publicidad y direccion de arte. Este carrusel muestra una seleccion de proyectos para presentar mi estilo y proceso de trabajo.
           </p>
@@ -314,7 +323,7 @@ const handleMenuClick = (sectionId: string) => {
 
   <div class="bg-[#04090ffe] px-5 pb-16 pt-6 md:px-10 lg:px-16">
     <div
-      class="mx-auto w-full max-w-6xl rounded-[28px] border border-[#8ca7c124] bg-gradient-to-b from-[#0d1d30fe] via-[#45607e] to-[#1c324d] p-5 shadow-[0_30px_80px_rgba(4,9,15,0.45)] md:p-8"
+      class=""
     >
       <div class="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
         <div class="max-w-3xl space-y-4">
@@ -341,27 +350,27 @@ const handleMenuClick = (sectionId: string) => {
         </RouterLink>
       </div>
 
-      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 ">
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3  ">
         <RouterLink
           v-for="project in conectaProjects"
           :key="project.title"
           :to="project.to"
           class="group overflow-hidden rounded-2xl border border-white/20 bg-[#10263d]/70 transition hover:-translate-y-1 hover:bg-[#15324f]/80"
         >
-          <div class="h-56 overflow-hidden md:h-60 ">
+          <div class="relative h-56 overflow-hidden md:h-60 ">
             <img
               :src="project.image"
               :alt="project.title"
               class="h-full w-full object-cover transition duration-500 group-hover:scale-105 "
             >
-          </div>
-          <div class="space-y-2 p-5">
-            <h3 class="text-lg font-bold text-white font-['Montserrat-SemiBold']">
-              {{ project.title }}
-            </h3>
-            <p class="text-sm leading-relaxed text-[#d7e5f4] font-['Montserrat']">
-              {{ project.subtitle }}
-            </p>
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071523]/95 via-[#071523]/65 to-transparent p-5">
+              <h3 class="text-lg font-bold text-white font-['Montserrat-SemiBold']">
+                {{ project.title }}
+              </h3>
+              <p class="mt-1 text-sm leading-relaxed text-[#d7e5f4] font-['Montserrat']">
+                {{ project.subtitle }}
+              </p>
+            </div>
           </div>
         </RouterLink>
       </div>
@@ -374,8 +383,8 @@ const handleMenuClick = (sectionId: string) => {
 
   <div class="bg-[#04090ffe] px-5 pb-16 pt-6 md:px-10 lg:px-16">
     <div
-      class="mx-auto w-full max-w-6xl rounded-[28px] border border-[#8ca7c124] bg-gradient-to-b from-[#0d1d30fe] via-[#45607e] to-[#1c324d] p-5 shadow-[0_30px_80px_rgba(4,9,15,0.45)] md:p-8"
-    >
+      class=""
+      >
       <div class="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
         <div class="max-w-3xl space-y-4">
           <p class="text-xs tracking-[0.22em] text-[#d9e8f7] uppercase font-['Montserrat-Light']">
@@ -396,27 +405,27 @@ const handleMenuClick = (sectionId: string) => {
         
       </div>
 
-      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 ">
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-2 ">
         <RouterLink
           v-for="cartel in carteles"
           :key="cartel.title"
           :to="cartel.to"
           class="group overflow-hidden rounded-2xl border border-white/20 bg-[#10263d]/70 transition hover:-translate-y-1 hover:bg-[#15324f]/80"
         >
-          <div class="h-56 overflow-hidden md:h-60 ">
+          <div class="relative h-56g overflow-hidden md:h-60 ">
             <img
               :src="cartel.image"
               :alt="cartel.title"
               class="h-full w-full object-cover transition duration-500 group-hover:scale-105 "
             >
-          </div>
-          <div class="space-y-2 p-5">
-            <h3 class="text-lg font-bold text-white font-['Montserrat-SemiBold']">
-              {{ cartel.title }}
-            </h3>
-            <p class="text-sm leading-relaxed text-[#d7e5f4] font-['Montserrat']">
-              {{ cartel.subtitle }}
-            </p>
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071523]/95 via-[#071523]/65 to-transparent p-5">
+              <h3 class="text-lg font-bold text-white font-['Montserrat-SemiBold']">
+                {{ cartel.title }}
+              </h3>
+              <p class="mt-1 text-sm leading-relaxed text-[#d7e5f4] font-['Montserrat']">
+                {{ cartel.subtitle }}
+              </p>
+            </div>
           </div>
         </RouterLink>
       </div>
@@ -425,19 +434,102 @@ const handleMenuClick = (sectionId: string) => {
 
 </section>
 
+<section id="about">
 
-<section id="contacto">
-  <div class="bg-[#04090ffe]  ">
+  <div class="bg-[#04090ffe] px-5 pb-16 pt-6 md:px-10 lg:px-16 ">
 
-    <<!-- img
-            src="/fondo2.jpg"
-            alt="Imagen principal"
-            class="pt-3.5 w-screen  object-cover "
-    /> -->
+    <div class="mb-8 space-y-6">
+      <div class="max-w-3xl space-y-4">
+        <p class="text-xs tracking-[0.22em] text-[#d9e8f7] uppercase font-['Montserrat-Light']">
+          Home / ABOUT
+        </p>
+        <img
+          src="/ABOUT.png"
+          alt="About"
+          class="w-full max-w-[430px] object-contain"
+        >
+      </div>
+
+      <div class="grid items-start gap-6 md:grid-cols-[0.8fr_1.2fr]">
+        <div class="w-full max-w-sm">
+         <div class="mx-auto h-48 w-48 rounded-full bg-gradient-to-br from-[#9fc0e1] via-[#dbe9f7] to-[#17304b] p-[3px] shadow-[0_0_26px_rgba(159,192,225,0.35)] md:mx-0 md:h-56 md:w-56">
+            <div class="h-full w-full rounded-full bg-[#04090ffe] p-1">
+              <img
+                src=""
+                alt="Foto "
+                class="h-full w-full rounded-full border border-white/20 object-cover object-center"
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="grid gap-4">
+          <article class="rounded-2xl border border-white/20 bg-[#11243a]/75 p-5">
+            <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
+              Sobre mi
+            </h2>
+            <p class="mt-2 text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
+              breve presentacion profesional para tu portfolio.
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-white/20 bg-[#11243a]/75 p-5">
+            <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
+              Formacion
+            </h2>
+            <p class="mt-2 text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
+               resumir estudios, cursos y especializaciones relevantes.
+            </p>
+          </article>
+
+          <article class="rounded-2xl border border-white/20 bg-[#11243a]/75 p-5">
+            <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
+              Habilidades
+            </h2>
+            <p class="mt-2 text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
+            software, tecnicas y puntos fuertes de tu perfil creativo.
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+    
 
   </div>
 
 </section>
+
+<section id="contacto">
+  <div class="bg-[#04090ffe] px-5 pb-16 pt-6 md:px-10 lg:px-16 ">
+    <div class="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+        <div class="max-w-3xl space-y-4">
+          <p class="text-xs tracking-[0.22em] text-[#d9e8f7] uppercase font-['Montserrat-Light']">
+            Home / CONTACT
+          </p>
+          <img
+            src="/CONTACT.png"
+            alt="Conecta"
+            class="w-full max-w-[430px] object-contain"
+          >
+          <p class="text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
+            selección de carteles donde exploro la comunicación visual desde la síntesis,
+            la jerarquía y la intención gráfica.
+            Cada pieza responde a un concepto claro: atraer, informar y permanecer en la memoria.
+          </p>
+        </div>
+
+        
+      </div>
+    
+
+  </div>
+    
+
+  
+
+</section>
+
+
 
 </template>
 
