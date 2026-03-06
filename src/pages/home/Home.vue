@@ -129,10 +129,10 @@ const handleMenuClick = (sectionId: string) => {
   </Toggle>
 
   <div class="flex justify-center gap-5 pr-10" >
-    <NavigationMenu class="hidden md:flex fixed top-[50px] items-center gap-6 h-10 px-6 py-2 rounded-full bg-white/25 backdrop-blur-md z-50 ">
+    <NavigationMenu class="hidden md:flex fixed top-[50px] items-center gap-6 h-10 px-6 py-2 rounded-full bg-white/25 backdrop-blur-md z-50 font-['Montserrat'] ">
       <NavigationMenuList>
 
-        <NavigationMenuItem class="flex px-4 items-center rounded-full hover:bg-white/30 transition">
+        <NavigationMenuItem class="flex px-4 items-center rounded-full hover:bg-white/30 transition ">
           <a href="#" @click.prevent="scrollToSection('#')">
             <NavigationMenuLink>
               Home
@@ -185,7 +185,7 @@ const handleMenuClick = (sectionId: string) => {
 
   <div
     v-if="menuOpen"
-    class="fixed top-14 right-4 bg-white/25 backdrop-blur-md rounded-2xl px-3 py-2 z-50 md:hidden"
+    class="fixed top-14 right-4 bg-white/25 backdrop-blur-md rounded-2xl px-3 py-2 z-50 md:hidden "
   >
     <nav class="flex flex-col items-start gap-1">
       <a href="#" class="flex px-3 py-1 items-center rounded-full hover:bg-white/30 transition" @click.prevent="handleMenuClick('#')">
@@ -207,9 +207,9 @@ const handleMenuClick = (sectionId: string) => {
   </div>
 
 <section id="home">
-  <div class=" bg-[#04090ffe] pt-0 ">
+  <div class=" bg-[#0b121b] pt-0 ">
 
-    <img src="/PRUEBA_Home.jpg" alt="">
+    <img src="/Home(3).jpg" alt="">
 
     <!-- <img src="/ImagenesHome/fondo2.jpg"alt="Fondo" height="100px"
     class=" absolute inset-0 w-full h-full object-cover  z-10 "/>
@@ -233,7 +233,7 @@ const handleMenuClick = (sectionId: string) => {
 
 <section id="section-3d">
 
-  <div class="bg-[#04090ffe] px-5 py-14 md:px-10 lg:px-16">
+  <div class="bg-[#0b121b] px-5 py-14 md:px-10 lg:px-16">
     <div class="">
       <div class="mb-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div class="flex max-w-2xl flex-col gap-4">
@@ -321,7 +321,7 @@ const handleMenuClick = (sectionId: string) => {
 
 <section id="conecta">
 
-  <div class="bg-[#04090ffe] px-5 pb-16 pt-6 md:px-10 lg:px-16">
+  <div class="bg-[#0b121b] px-5 pb-16 pt-6 md:px-10 lg:px-16">
     <div
       class=""
     >
@@ -381,7 +381,7 @@ const handleMenuClick = (sectionId: string) => {
 
 <section id="carteles">
 
-  <div class="bg-[#04090ffe] px-5 pb-16 pt-6 md:px-10 lg:px-16">
+  <div class="bg-[#0b121b] px-5 pb-16 pt-6 md:px-10 lg:px-16">
     <div
       class=""
       >
@@ -436,7 +436,7 @@ const handleMenuClick = (sectionId: string) => {
 
 <section id="about">
 
-  <div class="bg-[#04090ffe] px-5 pb-16 pt-6 md:px-10 lg:px-16 ">
+  <div class="bg-[#0b121b] px-5 pb-16 pt-6 md:px-10 lg:px-16 ">
 
     <div class="mb-8 space-y-6">
       <div class="max-w-3xl space-y-4">
@@ -450,10 +450,10 @@ const handleMenuClick = (sectionId: string) => {
         >
       </div>
 
-      <div class="grid items-start gap-6 md:grid-cols-[0.8fr_1.2fr]">
-        <div class="w-full max-w-sm">
+      <div class="grid items-start gap-6  md:grid-cols-[0.8fr_1.2fr]">
+        <div class="w-full pt-20 max-w-sm">
          <div class="mx-auto h-48 w-48 rounded-full bg-gradient-to-br from-[#9fc0e1] via-[#dbe9f7] to-[#17304b] p-[3px] shadow-[0_0_26px_rgba(159,192,225,0.35)] md:mx-0 md:h-56 md:w-56">
-            <div class="h-full w-full rounded-full bg-[#04090ffe] p-1">
+            <div class="h-full w-full rounded-full bg-[#0b121b] p-1">
               <img
                 src=""
                 alt="Foto "
@@ -500,7 +500,7 @@ const handleMenuClick = (sectionId: string) => {
 </section>
 
 <section id="contacto">
-  <div class="bg-[#04090ffe] px-5 pb-16 pt-6 md:px-10 lg:px-16 ">
+  <div class="bg-[#0b121b] px-5 pb-16 pt-6 md:px-10 lg:px-16 ">
     <div class="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
         <div class="max-w-3xl space-y-4">
           <p class="text-xs tracking-[0.22em] text-[#d9e8f7] uppercase font-['Montserrat-Light']">
