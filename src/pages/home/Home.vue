@@ -69,7 +69,7 @@ const conectaProjects = [
     title: 'Video de campana',
     subtitle: 'Spot principal con narrativa intergeneracional',
     image: '/conecta_img/foto video.jpg',
-    to: '/conecta/Video',
+    to: 'https://drive.google.com/file/d/13zeZ5UIgVtyyzTYtho8MfZKsBf2V-jnD/view?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnrtooWsQbvgpdk3MJjQG4hMocW_zl7tU1fVj3LQ3BvLgtj7vvTqggbV1FlKI_aem_OKava5qmZZKotSMoa1h1bg',
   },
   {
     title: 'Serie de carteles',
@@ -117,6 +117,8 @@ const handleMenuClick = (sectionId: string) => {
   scrollToSection(sectionId)
   menuOpen.value = false
 }
+
+const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
 </script>
 
 <template>
@@ -351,28 +353,56 @@ const handleMenuClick = (sectionId: string) => {
       </div>
 
       <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3  ">
-        <RouterLink
+        <template
           v-for="project in conectaProjects"
           :key="project.title"
-          :to="project.to"
-          class="group overflow-hidden rounded-2xl border border-white/20 bg-[#10263d]/70 transition hover:-translate-y-1 hover:bg-[#15324f]/80"
         >
-          <div class="relative h-56 overflow-hidden md:h-60 ">
-            <img
-              :src="project.image"
-              :alt="project.title"
-              class="h-full w-full object-cover transition duration-500 group-hover:scale-105 "
-            >
-            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071523]/95 via-[#071523]/65 to-transparent p-5">
-              <h3 class="text-lg font-bold text-white font-['Montserrat-SemiBold']">
-                {{ project.title }}
-              </h3>
-              <p class="mt-1 text-sm leading-relaxed text-[#d7e5f4] font-['Montserrat']">
-                {{ project.subtitle }}
-              </p>
+          <a
+            v-if="isExternalLink(project.to)"
+            :href="project.to"
+            target=""
+            rel="noopener noreferrer"
+            class="group overflow-hidden rounded-2xl border border-white/20 bg-[#10263d]/70 transition hover:-translate-y-1 hover:bg-[#15324f]/80"
+          >
+            <div class="relative h-56 overflow-hidden md:h-60 ">
+              <img
+                :src="project.image"
+                :alt="project.title"
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105 "
+              >
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071523]/95 via-[#071523]/65 to-transparent p-5">
+                <h3 class="text-lg font-bold text-white font-['Montserrat-SemiBold']">
+                  {{ project.title }}
+                </h3>
+                <p class="mt-1 text-sm leading-relaxed text-[#d7e5f4] font-['Montserrat']">
+                  {{ project.subtitle }}
+                </p>
+              </div>
             </div>
-          </div>
-        </RouterLink>
+          </a>
+
+          <RouterLink
+            v-else
+            :to="project.to"
+            class="group overflow-hidden rounded-2xl border border-white/20 bg-[#10263d]/70 transition hover:-translate-y-1 hover:bg-[#15324f]/80"
+          >
+            <div class="relative h-56 overflow-hidden md:h-60 ">
+              <img
+                :src="project.image"
+                :alt="project.title"
+                class="h-full w-full object-cover transition duration-500 group-hover:scale-105 "
+              >
+              <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#071523]/95 via-[#071523]/65 to-transparent p-5">
+                <h3 class="text-lg font-bold text-white font-['Montserrat-SemiBold']">
+                  {{ project.title }}
+                </h3>
+                <p class="mt-1 text-sm leading-relaxed text-[#d7e5f4] font-['Montserrat']">
+                  {{ project.subtitle }}
+                </p>
+              </div>
+            </div>
+          </RouterLink>
+        </template>
       </div>
     </div>
   </div>
@@ -451,11 +481,11 @@ const handleMenuClick = (sectionId: string) => {
       </div>
 
       <div class="grid items-start gap-6  md:grid-cols-[0.8fr_1.2fr]">
-        <div class="w-full pt-20 max-w-sm">
+        <div class="w-full pt-20 pl-15 max-w-sm">
          <div class="mx-auto h-48 w-48 rounded-full bg-gradient-to-br from-[#9fc0e1] via-[#dbe9f7] to-[#17304b] p-[3px] shadow-[0_0_26px_rgba(159,192,225,0.35)] md:mx-0 md:h-56 md:w-56">
             <div class="h-full w-full rounded-full bg-[#0b121b] p-1">
               <img
-                src=""
+                src="/FotoMia.jpg"
                 alt="Foto "
                 class="h-full w-full rounded-full border border-white/20 object-cover object-center"
               >
