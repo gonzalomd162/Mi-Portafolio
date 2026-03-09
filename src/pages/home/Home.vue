@@ -31,21 +31,13 @@ const works3D = [
     image: '/Imagenes_Arma/Arma render 7.2.jpg',
   },
   
-  {
-    title: 'WireFrame',
-    subtitle: 'Composición de la escena',
-    image: '/Imagenes_Arma/Captura de blender 2.jpg',
-  },
+ 
    {
     title: 'procedural Ball',
     subtitle: 'Esquema nodal',
     image: '/Imagenes_Bola/RenderFinalPelotiña.jpg',
   },
-   {
-    title: 'WireFrame',
-    subtitle: 'Pieza 3D procedural en Houdini SideFX',
-    image: '/Imagenes_Bola/Captura Bola.jpg',
-  },
+ 
   {
     title: 'Letra G',
     subtitle: 'Pieza 3D letra G',
@@ -66,7 +58,7 @@ const works3D = [
 ]
 const conectaProjects = [
   {
-    title: 'Video de campana',
+    title: 'Video de la campaña',
     subtitle: 'Spot principal con narrativa intergeneracional',
     image: '/conecta_img/foto video.jpg',
     to: 'https://drive.google.com/file/d/13zeZ5UIgVtyyzTYtho8MfZKsBf2V-jnD/view?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnrtooWsQbvgpdk3MJjQG4hMocW_zl7tU1fVj3LQ3BvLgtj7vvTqggbV1FlKI_aem_OKava5qmZZKotSMoa1h1bg',
@@ -499,17 +491,25 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
               Sobre mi
             </h2>
             <p class="mt-2 text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
-              breve presentacion profesional para tu portfolio.
+              Estudiante de Diseño y Tecnologías Creativas.
+              Deportista de alto rendimiento en Esgrima desde 2020.
+              Me caracterizó por ser una persona, comprometida, responsable y abierta, cualidades que me permiten integrarme y ser eficiente.
             </p>
           </article>
 
           <article class="rounded-2xl border border-white/20 bg-[#11243a]/75 p-5">
             <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
-              Formacion
+               Formación
+
             </h2>
+           
             <p class="mt-2 text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
-               resumir estudios, cursos y especializaciones relevantes.
+              IES Benlliure (Valencia)-  Bachillerato Artístico <br>
+              Estudiante de Diseño y Tecnologías Creativas en la Universidad Politécnica de Valencia. <br>
+              Curso de modelado hard-surface en Udemi <br>
+              Federación Esgrima Comunidad Valenciana - Título de árbitro nivel autonómico
             </p>
+          
           </article>
 
           <article class="rounded-2xl border border-white/20 bg-[#11243a]/75 p-5">
@@ -517,7 +517,42 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
               Habilidades
             </h2>
             <p class="mt-2 text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
-            software, tecnicas y puntos fuertes de tu perfil creativo.
+            Branding e identidad visual <br>
+
+            Diseño de carteleria <br>
+
+            3D Design (Houdini / Blender) <br>
+
+            Diseño web <br>
+
+            Typography <br>
+
+            Direccion de arte <br>
+
+            Fotografia
+              
+            </p>
+          </article>
+          
+
+          <article class="rounded-2xl border border-white/20 bg-[#11243a]/75 p-5">
+            <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
+              Herramientas
+            </h2>
+            <p class="mt-2 text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
+              Adobe Photoshop <br>
+
+              Adobe Illustrator <br>
+
+              Adobe InDesign <br>
+
+              Houdini SideFX <br>
+
+              Premiere Pro <br>
+
+              Blender
+              
+
             </p>
           </article>
         </div>

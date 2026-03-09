@@ -42,6 +42,7 @@ const projects: ProjectDetail[] = [
       'Exploracion de sistemas nodales para generar variaciones de forma y patron. El objetivo fue crear una pieza tecnica con acabado visual atractivo y flexible para distintas composiciones.',
     banner: '/PelotaPortada_fondoGrande.jpg',
     details: [
+      '/PelotaPortada_fondoGrande.jpg',
       '/Imagenes_Bola/Captura Bola.jpg',
       '/Imagenes_Bola/Captura Bola 2.jpg',
       '/PelotaPortada.jpg',
@@ -64,7 +65,7 @@ const projects: ProjectDetail[] = [
 ]
 </script>
 
-<template>
+<template >
   <main class="min-h-screen bg-[#0b121b] text-white">
     <header class="px-6 pb-10 pt-24 md:px-12 lg:px-20">
       <div class="mx-auto flex w-full max-w-6xl flex-col gap-6">
@@ -90,7 +91,7 @@ const projects: ProjectDetail[] = [
     <section
       v-for="project in projects"
       :key="project.id"
-      class="border-t border-white/10 px-6 py-12 md:px-12 md:py-16 lg:px-20"
+      class=" px-6 py-12 md:px-12 md:py-16 lg:px-20"
     >
       <div class="mx-auto w-full max-w-6xl">
         <div class="relative overflow-hidden rounded-3xl border border-white/20">
