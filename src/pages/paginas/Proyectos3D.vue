@@ -114,7 +114,7 @@ const projects: ProjectDetail[] = [
         </div>
 
         <div class="mt-8 grid items-start gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <article class="rounded-2xl border border-white/20 bg-[#1f3957]/65 p-6 md:p-7">
+          <article class="rounded-2xl  p-6 md:p-7">
             <h3 class="text-lg font-semibold text-[#e4eef8] font-['Montserrat-SemiBold']">
               Sobre el proyecto
             </h3>

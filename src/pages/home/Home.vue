@@ -497,7 +497,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
             </p>
           </article>
 
-          <article class="rounded-2xl border border-white/20 bg-[#11243a]/75 p-5">
+         <!--  <article class="rounded-2xl border border-white/20 bg-[#11243a]/75 p-5">
             <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
                Formación
 
@@ -510,7 +510,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
               Federación Esgrima Comunidad Valenciana - Título de árbitro nivel autonómico
             </p>
           
-          </article>
+          </article> -->
 
           <article class="rounded-2xl border border-white/20 bg-[#11243a]/75 p-5">
             <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
