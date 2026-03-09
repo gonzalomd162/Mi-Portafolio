@@ -165,14 +165,6 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
           </a>
         </NavigationMenuItem>
 
-        <NavigationMenuItem class="flex px-4 items-center rounded-full hover:bg-white/30 transition">
-          <a href="#" @click.prevent="scrollToSection('#contacto')">
-            <NavigationMenuLink>
-              Contacto
-            </NavigationMenuLink>
-          </a>
-        </NavigationMenuItem>
-
       </NavigationMenuList>
     </NavigationMenu>
   </div>
@@ -193,9 +185,6 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
       </a>
       <a href="#" class="flex px-3 py-1 items-center rounded-full hover:bg-white/30 transition" @click.prevent="handleMenuClick('#carteles')">
         Carteles
-      </a>
-      <a href="#" class="flex px-3 py-1 items-center rounded-full hover:bg-white/30 transition" @click.prevent="handleMenuClick('#contacto')">
-        Contacto
       </a>
     </nav>
   </div>
@@ -564,35 +553,40 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
 
 </section>
 
-<section id="contacto">
-  <div class="bg-[#0b121b] px-5 pb-16 pt-6 md:px-10 lg:px-16 ">
-    <div class="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-        <div class="max-w-3xl space-y-4">
-          <p class="text-xs tracking-[0.22em] text-[#d9e8f7] uppercase font-['Montserrat-Light']">
-            Home / CONTACT
-          </p>
-          <img
-            src="/CONTACT.png"
-            alt="Conecta"
-            class="w-full max-w-[430px] object-contain"
-          >
-          <p class="text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
-            selección de carteles donde exploro la comunicación visual desde la síntesis,
-            la jerarquía y la intención gráfica.
-            Cada pieza responde a un concepto claro: atraer, informar y permanecer en la memoria.
-          </p>
-        </div>
-
-        
+<footer id="contacto" class="bg-[#070d14] px-5 pb-10 pt-10 md:px-10 lg:px-16">
+  <div class="border-t border-white/15 pt-8">
+    <div class="grid gap-8 md:grid-cols-2 md:items-end">
+      <div class="space-y-4">
+        <p class="text-xs tracking-[0.22em] text-[#d9e8f7] uppercase font-['Montserrat-Light']">
+          Home / CONTACT
+        </p>
+        <img
+          src="/CONTACT.png"
+          alt="Contact"
+          class="w-full max-w-[320px] object-contain"
+        >
+        <p class="max-w-xl text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
+          Si quieres colaborar en un proyecto de diseno grafico, 3D o web, escribeme y hablamos.
+        </p>
       </div>
-    
 
+      <div class="space-y-3 text-sm text-[#dbe9f7] md:text-base font-['Montserrat'] md:text-right">
+        <p>
+          693 268 710
+        </p>
+        <p>
+          Email: <a class="underline decoration-white/40 underline-offset-4 hover:text-white transition" href="mailto:gonzalomd162@gmail.com">gonzalomd162@gmail.com</a>
+        </p>
+        <p>
+          Portfolio: <a class="underline decoration-white/40 underline-offset-4 hover:text-white transition" href="#" @click.prevent="scrollToSection('#home')">Volver arriba</a>
+        </p>
+        <p class="pt-2 text-xs tracking-[0.08em] text-[#9eb4ca] uppercase font-['Montserrat-Light']">
+          Gonzalo Moreno Domingo
+        </p>
+      </div>
+    </div>
   </div>
-    
-
-  
-
-</section>
+</footer>
 
 
 
