@@ -15,6 +15,7 @@ interface ProjectDetail {
   subtitle: string
   description: string
   banner: string
+  bannerVideo?: string
   details: string[]
 }
 
@@ -41,6 +42,7 @@ const projects: ProjectDetail[] = [
     description:
       'Exploracion de sistemas nodales para generar variaciones de forma y patron. El objetivo fue crear una pieza tecnica con acabado visual atractivo y flexible para distintas composiciones.',
     banner: '/PelotaPortada_fondoGrande.jpg',
+    bannerVideo: '/mi-video-pelota-boomerang.mp4',
     details: [
       '/PelotaPortada_fondoGrande.jpg',
       '/Imagenes_Bola/Captura Bola.jpg',
@@ -95,7 +97,17 @@ const projects: ProjectDetail[] = [
     >
       <div class="mx-auto w-full max-w-6xl">
         <div class="relative overflow-hidden rounded-3xl border border-white/20">
+          <video
+            v-if="project.bannerVideo"
+            :src="project.bannerVideo"
+            class="h-[260px] w-full object-cover md:h-[420px]"
+            autoplay
+            muted
+            loop
+            playsinline
+          />
           <img
+            v-else
             :src="project.banner"
             :alt="project.title"
             class="h-[260px] w-full object-cover md:h-[420px]"
