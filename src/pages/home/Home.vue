@@ -192,7 +192,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
 <section id="home">
   <div class=" bg-[#0b121b] pt-0 ">
 
-    <img src="/Home(3).jpg" alt="">
+    <img src="/PRUEBA_Home.jpg" alt="">
 
     <!-- <img src="/ImagenesHome/fondo2.jpg"alt="Fondo" height="100px"
     class=" absolute inset-0 w-full h-full object-cover  z-10 "/>
@@ -475,7 +475,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
         </div>
 
         <div class="grid gap-4">
-          <article class="rounded-2xl border border-white/20 bg-[#11243a]/75 p-5">
+          <article class=" p-5">
             <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
               Sobre mi
             </h2>
@@ -501,7 +501,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
           
           </article> -->
 
-          <article class="rounded-2xl border border-white/20 bg-[#11243a]/75 p-5">
+          <article class=" p-5">
             <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
               Habilidades
             </h2>
@@ -524,7 +524,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
           </article>
           
 
-          <article class="rounded-2xl border border-white/20 bg-[#11243a]/75 p-5">
+          <article class=" p-5">
             <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
               Herramientas
             </h2>
