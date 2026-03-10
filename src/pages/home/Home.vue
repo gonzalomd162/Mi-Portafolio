@@ -123,16 +123,17 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
   </Toggle>
 
   <div class="flex justify-center gap-5 pr-10" >
-    <NavigationMenu class="hidden md:flex fixed top-[50px] items-center gap-6 h-10 px-6 py-2 rounded-full bg-white/25 backdrop-blur-md z-50 font-['Montserrat'] ">
+    <NavigationMenu 
+    class="hidden md:flex fixed top-[50px] items-center gap-6 h-10 px-6 py-2 rounded-full bg-white/25 backdrop-blur-md z-50 font-['Montserrat'] ">
       <NavigationMenuList>
 
-        <NavigationMenuItem class="flex px-4 items-center rounded-full hover:bg-white/30 transition ">
+        <!-- <NavigationMenuItem class="flex px-4 items-center   ">
           <a href="#" @click.prevent="scrollToSection('#')">
             <NavigationMenuLink>
-              Home
+               <img src="/Firma.png" alt="Home" class="h-30 w-auto" />
             </NavigationMenuLink>
           </a>
-        </NavigationMenuItem>
+        </NavigationMenuItem> -->
 
         <NavigationMenuItem class="flex px-4 items-center rounded-full hover:bg-white/30 transition">
           <a href="#" @click.prevent="scrollToSection('#section-3d')">
@@ -190,9 +191,9 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
   </div>
 
 <section id="home">
-  <div class=" bg-[#0b121b] pt-0 ">
+  <div class=" bg-[#04080e] pt-0 ">
 
-    <img src="/PRUEBA_Home.jpg" alt="">
+    <img src="/FONDO_HOME.jpg" alt="">
 
     <!-- <img src="/ImagenesHome/fondo2.jpg"alt="Fondo" height="100px"
     class=" absolute inset-0 w-full h-full object-cover  z-10 "/>
@@ -216,7 +217,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
 
 <section id="section-3d">
 
-  <div class="bg-[#0b121b] px-5 py-14 md:px-10 lg:px-16">
+  <div class="bg-[#04080e] px-5 py-14 md:px-10 lg:px-16">
     <div class="">
       <div class="mb-6 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
         <div class="flex max-w-2xl flex-col gap-4">
@@ -304,7 +305,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
 
 <section id="conecta">
 
-  <div class="bg-[#0b121b] px-5 pb-16 pt-6 md:px-10 lg:px-16">
+  <div class="bg-[#04080e] px-5 pb-16 pt-6 md:px-10 lg:px-16">
     <div
       class=""
     >
@@ -319,9 +320,9 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
             class="w-full max-w-[430px] object-contain"
           >
           <p class="text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
-            Campaña de conexion intergeneracional centrada en emociones compartidas.
-            La idea no compara epocas: muestra como jovenes y mayores viven hoy
-            el amor, la amistad y el humor.
+            Este proyecto nace de una premisa fundamental: más allá de la brecha generacional, existe un terreno común donde todos somos iguales: lo que sentimos. Bajo el concepto de "conexión emocional", la campaña se aleja de la comparación entre jóvenes y mayores para centrarse en la identidad compartida.
+
+El objetivo fue demostrar que el amor, el miedo, la amistad o el humor no tienen fecha de caducidad ni pertenecen a una sola época. A través de un sistema visual que integra pasado y presente —utilizando tipografía contemporánea sobre archivos fotográficos históricos—, la pieza subraya que, aunque el contexto cambie, la esencia humana permanece intacta. Una invitación a reconocernos en el otro a través de los verbos que nos definen a todos: UNIR, AMAR y REÍR.
           </p>
         </div>
 
@@ -392,7 +393,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
 
 <section id="carteles">
 
-  <div class="bg-[#0b121b] px-5 pb-16 pt-6 md:px-10 lg:px-16">
+  <div class="bg-[#04080e] px-5 pb-16 pt-6 md:px-10 lg:px-16">
     <div
       class=""
       >
@@ -447,7 +448,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
 
 <section id="about">
 
-  <div class="bg-[#0b121b] px-5 pb-16 pt-6 md:px-10 lg:px-16 ">
+  <div class="bg-[#04080e] px-5 pb-16 pt-6 md:px-10 lg:px-16 ">
 
     <div class="mb-8 space-y-6">
       <div class="max-w-3xl space-y-4">
@@ -464,7 +465,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
       <div class="grid items-start gap-6  md:grid-cols-[0.8fr_1.2fr]">
         <div class="w-full pt-20 pl-15 max-w-sm">
          <div class="mx-auto h-48 w-48 rounded-full bg-gradient-to-br from-[#9fc0e1] via-[#dbe9f7] to-[#17304b] p-[3px] shadow-[0_0_26px_rgba(159,192,225,0.35)] md:mx-0 md:h-56 md:w-56">
-            <div class="h-full w-full rounded-full bg-[#0b121b] p-1">
+            <div class="h-full w-full rounded-full bg-[#04080e] p-1">
               <img
                 src="/FotoMia.jpg"
                 alt="Foto "
@@ -553,9 +554,9 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
 
 </section>
 
-<footer id="contacto" class="bg-[#070d14] px-5 pb-10 pt-10 md:px-10 lg:px-16">
+<footer id="contacto" class="bg-[#04080e] px-5 pb-10 pt-10 md:px-10 lg:px-16">
   <div class="border-t border-white/15 pt-8">
-    <div class="grid gap-8 md:grid-cols-2 md:items-end">
+    <div class="grid gap-8 md:grid-cols-[1fr_auto_1fr] md:items-end">
       <div class="space-y-4">
         <p class="text-xs tracking-[0.22em] text-[#d9e8f7] uppercase font-['Montserrat-Light']">
           Home / CONTACT
@@ -568,6 +569,12 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
         <p class="max-w-xl text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
           Si quieres colaborar en un proyecto de diseno grafico, 3D o web, escribeme y hablamos.
         </p>
+      </div>
+
+      <div class="flex justify-center">
+        <a href="#" @click.prevent="scrollToSection('#home')">
+          <img src="/Firma.png" alt="Firma" class="h-70 w-auto rounded-full hover:bg-white/5 transition" />
+        </a>
       </div>
 
       <div class="space-y-3 text-sm text-[#dbe9f7] md:text-base font-['Montserrat'] md:text-right">

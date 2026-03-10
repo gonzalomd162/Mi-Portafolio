@@ -5,8 +5,8 @@ import CartelPlantilla from "@/components/CartelPlantilla.vue"
 <template>
   <CartelPlantilla
     title="Cartel CONECTA"
-    concept="Conexion entre generaciones desde escenas cotidianas"
-    description="La pieza muestra el enfoque principal de la campana CONECTA: un lenguaje directo, emocional y facil de leer en exterior. Se presenta el mockup para ver la aplicacion en contexto y el cartel final para revisar composicion, jerarquia tipografica y color."
+    concept="Conexión entre generaciones"
+    description="Implementación de la identidad CONECTA en mobiliario urbano. El diseño prioriza una lectura clara y un tono honesto que apela a las emociones compartidas. La presentación combina la pieza en contexto (mockup) y el diseño en plano, permitiendo apreciar cómo la tipografía y el color trabajan juntos para transmitir un mensaje universal que trasciende la edad."
     mockup-image="/Carteles/Mockup carteles CONECTA.jpg"
     final-image="/Carteles/UNIR RGB.jpg"
   />

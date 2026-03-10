@@ -8,15 +8,15 @@ const cartelesConecta = [
     title: "Cartel 01  UNIR",
     concept: "Conecta generaciones desde lo cotidiano",
     description:
-      "Pieza principal para exterior. Se muestra el mockup y el arte final para comparar impacto visual y lectura.",
+      "UNIR y crear vínculos es la clave para crear un puente intergeneracional ",
     photos: ["Mockup carteles CONECTA.jpg", "UNIR RGB.jpg"],
   },
   {
     id: "reir",
     title: "Cartel 02  REIR",
-    concept: "Humor compartido como punto de union",
+    concept: "Humor compartido como punto de unión",
     description:
-      "Version de la serie que refuerza el tono cercano de la campana. Incluye contexto de aplicacion y pieza final.",
+      "REÍR nos ayuda a conocernos, conectar es sacar una sonrisa",
     photos: ["Mockup carteles CONECTA.jpg", "REIR RGB.jpg"],
   },
   {
@@ -24,15 +24,15 @@ const cartelesConecta = [
     title: "Cartel 03  AMAR",
     concept: "Mensaje emocional y transversal",
     description:
-      "Cartel centrado en la conexion emocional entre generaciones, manteniendo coherencia con el sistema visual de CONECTA.",
+      "AMAR es adaptarse al cambio para mantener el contacto con tus seres queridos",
     photos: ["Mockup carteles CONECTA.jpg", "AMAR RGB.jpg"],
   },
   {
     id: "mupi",
-    title: "Cartel 04  MUPI",
+    title: "Cartel 04   MUPI",
     concept: "Adaptacion a soporte urbano vertical",
     description:
-      "Adaptacion del sistema grafico a formato mupi: mockup de calle y version final limpia para ver detalle de diseno.",
+      "CONECTA GENERACIONES a través de emociones.",
     photos: ["Mockup  mupi.jpg", "MUPI Final.jpg"],
   },
 ]
@@ -56,15 +56,12 @@ const cartelMupi = cartelesConecta.find((cartel) => cartel.id === "mupi")
           Carteles Conecta
         </h1>
 
-        <p class="max-w-3xl text-sm leading-relaxed text-[#d7e5f4] md:text-base font-['Montserrat']">
-          Mockup general de los 3 carteles de campaña y detalle final ampliado por pieza.
-          En el 04 MUPI se mantiene el carrusel.
-        </p>
+        
       </header>
 
       <article class="overflow-hidden rounded-2xl  p-4 md:p-6">
         <p class="mb-4 text-xs tracking-[0.2em] text-[#9fc0e1] uppercase font-['Montserrat-Light']">
-          Mockup general de campana
+          Mockup general de campaña
         </p>
         <img
           src="/Carteles/Mockup carteles CONECTA.jpg"

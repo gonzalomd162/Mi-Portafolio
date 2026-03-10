@@ -25,7 +25,7 @@ const projects: ProjectDetail[] = [
     title: 'Hard Surface Weapon',
     subtitle: 'Modelado, texturizado y lookdev para visual publicitario',
     description:
-      'Proyecto enfocado en lenguaje hard-surface: limpieza de silueta, materiales con lectura clara y renders de estudio para presentar la pieza con impacto visual.',
+      'Proyecto centrado en el lenguaje hard-surface: priorizando la limpieza de la silueta, materiales con una lectura clara y renders de estudio diseñados para maximizar el impacto visual de la pieza.',
     banner: '/Imagenes_Arma/Arma render 7.4.jpg',
     details: [
       '/Imagenes_Arma/Arma render 7.1.jpg',
@@ -40,7 +40,7 @@ const projects: ProjectDetail[] = [
     title: 'Procedural Ball',
     subtitle: 'Desarrollo procedural en Houdini y render final',
     description:
-      'Exploracion de sistemas nodales para generar variaciones de forma y patron. El objetivo fue crear una pieza tecnica con acabado visual atractivo y flexible para distintas composiciones.',
+      'Exploración de sistemas nodales para la generación de variaciones formales y de patrones. El objetivo fue desarrollar una pieza técnica de estética atractiva, versátil y adaptable a diversas composiciones. Houdini SideFX. Gracias a ER Academy',
     banner: '/PelotaPortada_fondoGrande.jpg',
     bannerVideo: '/mi-video-pelota-boomerang.mp4',
     details: [
@@ -56,7 +56,7 @@ const projects: ProjectDetail[] = [
     title: 'Serie Letras 3D',
     subtitle: 'Piezas tipograficas tridimensionales',
     description:
-      'Coleccion de letras trabajadas como objetos de diseno 3D. Cada una fue planteada con volumen, materialidad y composicion para funcionar tanto de forma individual como en sistema.',
+      'Colección tipográfica abordada como objetos de diseño tridimensional. Cada carácter fue proyectado con volumen, materialidad y composición propia, logrando un equilibrio funcional tanto de forma individual como en sistema.',
     banner: '/imagenesLetras/letra_M.jpg',
     details: [
       '/imagenesLetras/letra_D.jpg',

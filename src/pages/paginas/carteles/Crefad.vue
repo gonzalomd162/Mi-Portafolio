@@ -6,7 +6,7 @@ import CartelPlantilla from "@/components/CartelPlantilla.vue"
   <CartelPlantilla
     title="Cartel CREFAD"
     concept="Identidad institucional con enfoque claro y funcional"
-    description="La propuesta esta planteada para comunicar informacion de forma directa, con una composicion limpia y ordenada. El mockup muestra su aplicacion en contexto, y el cartel final permite revisar detalles de reticula, jerarquia y lectura."
+    description="La propuesta está planteada para comunicar información de forma directa mediante una composición limpia y estructurada. El mockup ilustra su aplicación en el entorno real, mientras que el cartel final permite apreciar el rigor de la retícula, la jerarquía de elementos y la legibilidad del conjunto."
     mockup-image="/Carteles/Mockup CREFAD.jpg"
     final-image="/Carteles/CREFAD.jpg"
   />
