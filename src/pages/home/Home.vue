@@ -345,7 +345,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
             rel="noopener noreferrer"
             class="group overflow-hidden rounded-2xl border border-white/20 bg-[#10263d]/70 transition hover:-translate-y-1 hover:bg-[#15324f]/80"
           >
-            <div class="relative h-56 overflow-hidden md:h-60 ">
+            <div class="relative h-80 overflow-hidden md:h-90 ">
               <img
                 :src="project.image"
                 :alt="project.title"
@@ -367,7 +367,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
             :to="project.to"
             class="group overflow-hidden rounded-2xl border border-white/20 bg-[#10263d]/70 transition hover:-translate-y-1 hover:bg-[#15324f]/80"
           >
-            <div class="relative h-56 overflow-hidden md:h-60 ">
+            <div class="relative h-80 overflow-hidden md:h-90 ">
               <img
                 :src="project.image"
                 :alt="project.title"
@@ -477,7 +477,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
         <div class="grid gap-4">
           <article class=" p-5">
             <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
-              Sobre mi
+              SOBRE MI
             </h2>
             <p class="mt-2 text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
               Estudiante de Diseño y Tecnologías Creativas.
@@ -503,7 +503,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
 
           <article class=" p-5">
             <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
-              Habilidades
+              HABILIDADES
             </h2>
             <p class="mt-2 text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
             Branding e identidad visual <br>
@@ -526,7 +526,7 @@ const isExternalLink = (url: string) => /^https?:\/\//i.test(url)
 
           <article class=" p-5">
             <h2 class="text-base text-[#dbe9f7] font-['Montserrat-SemiBold']">
-              Herramientas
+              SOFTWARE
             </h2>
             <p class="mt-2 text-sm leading-relaxed text-[#dbe9f7] md:text-base font-['Montserrat']">
               Adobe Photoshop <br>
